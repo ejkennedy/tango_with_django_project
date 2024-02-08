@@ -1,0 +1,17 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Restricted Page
+{% endblock %}
+
+{% block body_block %}
+  <h1>Restricted Page</h1>
+  <div>
+    Wow what a cool page to now have access to because you are logged in! <br />
+    <strong>Enjoy the gentleman cat again</strong><br />
+  </div>
+  <div>
+    <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." />
+  </div>
+{% endblock %}
